@@ -1,4 +1,5 @@
 document.querySelector('.burger').addEventListener('click', function() {
             this.classList.toggle('active');
-            document.querySelector('.header-nav').classList.toggle('open');
+    document.querySelector('.header-nav').classList.toggle('open');
+    document.body.classList.toggle('noscroll');
         })
