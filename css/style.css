@@ -337,7 +337,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 370px;
-        width: 290px;
+        width: 270px;
         background-color: #3A6612;
         padding: 20px 20px;
     }
@@ -362,4 +362,112 @@
     
     .about-us-description {
         display: none;
+    }
+    /*!---------------CONTACTS-------------*/
+    
+    .contact-section {
+        background-color: white;
+    }
+    
+    .contact-title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-factory-name {
+        font-weight: bold;
+    }
+    
+    .contact {
+        font-family: Lexend;
+        font-size: 17px;
+        color: black;
+    }
+    
+    .contact-list {
+        display: flex;
+        gap: 35px;
+        flex-direction: column;
+    }
+    
+    .contact-address {
+        display: flex;
+        align-items: center;
+    }
+    
+    .location-soc-link {
+        margin-right: 15px;
+    }
+    
+    .contact-phones {
+        display: flex;
+        align-items: center;
+    }
+    
+    .phone-soc-link {
+        margin-right: 15px;
+    }
+    
+    .contact-emails {
+        display: flex;
+        align-items: center;
+    }
+    
+    .mail-soc-link {
+        margin-right: 15px;
+    }
+    
+    .map {
+        display: none;
+    }
+    /*?----------FOOTER----------------*/
+    
+    .footer {
+        background-color: #3A6612;
+    }
+    
+    .address-footer {
+        display: none;
+    }
+    
+    .footer-nav-list {
+        display: none;
+    }
+    
+    .footer-logo-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    
+    .footer-text-mobile-tablet {
+        color: white;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    
+    .footer-additional-item-link {
+        margin: auto;
+        color: white;
+        font-size: 11px;
+    }
+    
+    .created-by-list {
+        display: flex;
+    }
+    
+    .created-by-item {
+        color: white;
+        font-size: 12px;
+    }
+    
+    .developer-link {
+        color: white
     }
