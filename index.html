@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&family=Open+Sans:wght@400;600;700&family=Raleway:wght@800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -111,28 +112,21 @@
 
                 <div class="offers-wrap">
                     <h2 class="offers-main-title">Oferty</h2>
-                    <ul class="offers-list list">
-                        <li class="offers-item">
-                            <h3 class="offers-title">Tarcica i wyroby tartaczne</h3>
-                            <img class="offers-item-img" src="./images/oferty/oferty-img-1.jpg" alt="nasza Oferta">
-                            <a class="offers-item-link link" href="" target="_blank" rel="noopener noreferrer nofollow">zobacz w sklepie></a>
-                        </li>
-                        <li class="offers-item">
-                            <h2 class="offers-title">Drewno kominkowe</h2>
-                            <img class="offers-item-img" src="./images/oferty/oferty-img-2.jpg" alt="nasza Oferta">
-                            <a class="offers-item-link link" href="" target="_blank" rel="noopener noreferrer nofollow">zobacz w sklepie></a>
-                        </li>
-                        <li class="offers-item">
-                            <h2 class="offers-title">Surowiec sklejkarski</h2>
-                            <img class="offers-item-img" src="./images/oferty/oferty-img-3.jpg" alt="nasza Oferta">
-                            <a class="offers-item-link link" href="" target="_blank" rel="noopener noreferrer nofollow">zobacz w sklepie></a>
-                        </li>
-                        <li class="offers-item">
-                            <h2 class="offers-title">Surowiec sklejkarski</h2>
-                            <img class="offers-item-img" src="./images/oferty/oferty-img-3.jpg" alt="nasza Oferta">
-                            <a class="offers-item-link link" href="" target="_blank" rel="noopener noreferrer nofollow">zobacz w sklepie></a>
-                        </li>
-                    </ul>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide offers-item">
+                                    <h3 class="offers-title">Tarcica i wyroby tartaczne</h3>
+                                    <img class="offers-item-img" src="./images/oferty/oferty-img-1.jpg" alt="nasza Oferta">
+                                    <a class="offers-item-link link" href="" target="_blank" rel="noopener noreferrer nofollow">zobacz w sklepie></a></div>
+                                <div class="swiper-slide offers-item"><h2 class="offers-title">Drewno kominkowe</h2>
+                                    <img class="offers-item-img" src="./images/oferty/oferty-img-2.jpg" alt="nasza Oferta">
+                                    <a class="offers-item-link link" href="" target="_blank" rel="noopener noreferrer nofollow">zobacz w sklepie></a></div>
+                                <div class="swiper-slide offers-item"><h2 class="offers-title">Surowiec sklejkarski</h2>
+                                    <img class="offers-item-img" src="./images/oferty/oferty-img-3.jpg" alt="nasza Oferta">
+                                    <a class="offers-item-link link" href="" target="_blank" rel="noopener noreferrer nofollow">zobacz w sklepie></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
                 </div>
             </div>
         </section>
@@ -294,6 +288,23 @@
     <script src="./js/dropdownHover.js"></script>
     <script src="./js/telegramNotifier.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    var mySwiper = new Swiper(".swiper-container", {
+        loop: true,
+        autoplay: {
+            delay: 8000, // Таймер на 8 секунд
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+
+    // Запускаємо таймер автопрокрутки слайдів
+    mySwiper.autoplay.start();
+});
+    </script>
 </body>
 
 </html>

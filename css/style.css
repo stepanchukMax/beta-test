@@ -115,7 +115,6 @@
    }
    
    body {
-       background: #9ab1eb;
        font-family: Lexend;
        font-weight: 400;
    }
@@ -375,6 +374,7 @@
    .offers {
        padding-top: 20px;
        padding-bottom: 20px;
+       position: relative;
    }
    
    .offers-wrap {
@@ -383,23 +383,26 @@
        justify-content: center;
        align-items: center;
    }
-   
-   .offers-list {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       gap: 20px;
-       flex-direction: column;
-   }
+
+   .offers-main-title {
+    color: white;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
    
    .offers-item {
        display: flex;
        flex-direction: column;
        justify-content: space-between;
-       width: 75%;
        background-color: #3A6612;
-       padding: 15px 15px;
+       padding: 10px 15px;
        flex-direction: column;
+   }
+
+   .offers-item img {
+    margin-bottom: 20px;
    }
    
    .offers-title {
@@ -408,21 +411,26 @@
        font-size: 20px;
        margin-bottom: 10px;
    }
-   
-   .offers-main-title {
-       color: white;
-       text-align: center;
-       font-family: Lexend;
-       font-size: 30px;
-       margin-bottom: 20px;
-   }
-   
+    
    .offers-item-link {
-       margin-top: 20px;
        color: white;
        font-weight: 400;
        font-size: 18px;
    }
+   /*SLIDER*/
+
+   .swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* Стилі для пагінації слайдера */
+.swiper-pagination {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
    /*!---------------ABOUT US-------------*/
    
    .about-us-title {
@@ -435,7 +443,6 @@
    /*!---------------CONTACTS-------------*/
    
    .contact-section {
-       background-color: white;
        padding-top: 20px;
        padding-bottom: 20px;
    }
