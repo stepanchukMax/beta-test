@@ -584,11 +584,14 @@
            display: none;
        }
        .offers-list {
-           margin-top: -90px;
            display: flex;
            flex-wrap: wrap;
            gap: 64px 24px;
            flex-direction: row;
+           z-index: 3;
+       }
+       .offers-item {
+        width: 28%;
        }
        .contact-info-wrap {
            display: flex;
