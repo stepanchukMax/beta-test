@@ -383,14 +383,14 @@
        justify-content: center;
        align-items: center;
    }
-
+   
    .offers-main-title {
-    color: white;
-    text-align: center;
-    font-family: Lexend;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
+       color: white;
+       text-align: center;
+       font-family: Lexend;
+       font-size: 30px;
+       margin-bottom: 20px;
+   }
    
    .offers-item {
        display: flex;
@@ -400,9 +400,9 @@
        padding: 10px 15px;
        flex-direction: column;
    }
-
+   
    .offers-item img {
-    margin-bottom: 20px;
+       margin-bottom: 20px;
    }
    
    .offers-title {
@@ -411,24 +411,23 @@
        font-size: 20px;
        margin-bottom: 10px;
    }
-    
+   
    .offers-item-link {
        color: white;
        font-weight: 400;
        font-size: 18px;
    }
    /*SLIDER*/
-
+   
    .swiper-container {
-    width: 100%;
-    overflow: hidden;
-}
-
-.swiper-pagination {
-    left: 50%;
-    transform: translateX(-50%);
-}
-
+       width: 100%;
+       overflow: hidden;
+   }
+   
+   .swiper-pagination {
+       left: 50%;
+       transform: translateX(-50%);
+   }
    /*!---------------ABOUT US-------------*/
    
    .about-us-title {
@@ -591,7 +590,7 @@
            z-index: 3;
        }
        .offers-item {
-        width: 28%;
+           width: 28%;
        }
        .contact-info-wrap {
            display: flex;

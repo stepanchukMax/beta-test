@@ -5,10 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&family=Open+Sans:wght@400;600;700&family=Raleway:wght@800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/shopStyle.css">
+
 </head>
 
 <body>
+    <header class="header-container ">
+        <div class="nav container">
+            <a href="./index.html" class="header-logo link" target="_blank" rel="noopener noreferrer nofollow">
+                firma<span class="logo-second-word">Forest</span>
+            </a>
+            <nav class="header-nav">
+                <ul class="address-list list">
+                    <li class="address-item phone-number">
+                        <svg width="13" height="13" class="phone-soc-link-header" fill="white">
+                            <use href="./images/svg/icons.svg#icon-phone"></use>
+                        </svg>
+                        <a href="tel:+48607450253" class="address-item-link link " target="_blank" rel="noopener noreferrer nofollow">+48 607 450 253</a>
+                    </li>
+                    <li class="address-item">
+                        <svg width="13" height="10" class="mail-soc-link-header" fill="white">
+                                <use href="./images/svg/icons.svg#icon-mail"></use>
+                            </svg>
+                        <a href="mailto:forest@forest.infoset.pl" class="address-item-link link" target="_blank" rel="noopener noreferrer nofollow">forest@forest.infoset.pl</a>
+                    </li>
+                </ul>
+                <ul class="header-list list">
+                    <li class="header-item">
+                        <a href="#offers" class="header-item-link link" rel="noopener noreferrer nofollow">Oferty</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="header-item-link link" target="_blank" rel="noopener noreferrer nofollow">Sklep</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#about-us" class="header-item-link link" rel="noopener noreferrer nofollow">O firmie</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#contact" class="header-item-link link" rel="noopener noreferrer nofollow">Kontakt</a>
+                    </li>
+                </ul>
+                <ul class="language-list list dropdown">
+                    <li class="language-item dropdown-toggle" id="dropdownToggle">
+                        <img width="30" src="./images/pl.svg" alt="icon-pl">
+                        <p>PL</p>
+                        <img width="18" src="./images/arrow-down.svg" alt="icon-arrow-down" class="arrow-down">
+                    </li>
+                    <li class="language-item language-item-toggle dropdown-menu" id="language-drop" id="dropdownMenu">
+                        <a href="#"><img width="30" src="./images/en.svg" alt="icon-pl">
+                            <p>EN</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="products container">
+        <ul class="product-list list">
 
+        </ul>
+    </main>
+
+    <script src="./js/shop-js/products.js"></script>
+    <script src="./js/burgerMenu.js"></script>
+    <script src="./js/dropdownHover.js"></script>
 </body>
 
 </html>
