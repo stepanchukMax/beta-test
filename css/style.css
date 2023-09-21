@@ -424,8 +424,6 @@
     overflow: hidden;
 }
 
-
-/* Стилі для пагінації слайдера */
 .swiper-pagination {
     left: 50%;
     transform: translateX(-50%);
